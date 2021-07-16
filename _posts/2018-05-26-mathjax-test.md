@@ -1,5 +1,4 @@
 
-
 ---
 layout: post
 title: Mathjax Test
@@ -7,6 +6,18 @@ subtitle: My first mathjax expression
 categories: markdown
 tags: [test]
 ---
+
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
 
 * A safe integer is an integer that
   * can be exactly represented as an IEEE-754 double precision number, and
