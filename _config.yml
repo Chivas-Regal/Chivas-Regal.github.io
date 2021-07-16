@@ -135,7 +135,7 @@ yat:
 #   - about.md
 
 # Page default value
- defaults:
+ #defaults:
    home:
      heading: "Chivas-Regal"
      subheading: "The commonest thing is delightful if only one hides it"
