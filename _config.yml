@@ -135,10 +135,10 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Chivas-Regal's BlogSpace"
-#     subheading: "📖 The commonest thing is delightful if only one hides it "
+ defaults:
+   home:
+     heading: "Chivas-Regal's BlogSpace"
+     subheading: "📖 The commonest thing is delightful if only one hides it "
 #     banner: "Your image url"
 
 # Banner default settings
