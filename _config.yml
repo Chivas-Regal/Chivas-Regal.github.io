@@ -137,8 +137,8 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+#     heading: "Chivas-Regal's BlogSpace"
+#     subheading: "📖 The commonest thing is delightful if only one hides it "
 #     banner: "Your image url"
 
 # Banner default settings
@@ -169,7 +169,7 @@ yat:
 
 # Gitment comments
 # gitment:
-#   username: "Your GitHub username"
+#   username: "Chivas-Regal"
 #   repo: "The repo to store comments"
 #   client_id: "Your client ID"
 #   client_secret: "Your client secret"
