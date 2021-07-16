@@ -24,14 +24,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: Blog of Chivas-Regal
+email: 1411390466@qq.com
+author: Chivas-Regal
 copyright: Copyright © 1970-2010
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  U may get something U want to get Here
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -139,8 +137,8 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+#     heading: "Chivas-Regal"
+#     subheading: "The commonest thing is delightful if only one hides it"
 #     banner: "Your image url"
 
 # Banner default settings
