@@ -768,7 +768,7 @@ for ( int i = 1; i &lt;= n; i ++ ) {
 <span class="hljs-keyword">int</span> n, num, minutes[N]; <span class="hljs-comment">// 这里体积等于价值等于minutes[i]</span>
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-keyword">while</span> ( <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>, &amp;n, &amp;num) == <span class="hljs-number">2</span> ) {
+        <span class="hljs-keyword">while</span> ( <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>, &amp;n, &amp;num) == <span class="hljs-number">2</span> ) 
                 <span class="hljs-keyword">for</span> ( <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; N; i ++ ) dp[i] = {{}, <span class="hljs-number">0</span>}; <span class="hljs-comment">//初始化</span>
                 
                 <span class="hljs-keyword">for</span> ( <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; num; i ++ ) minutes[i] = inputInt(); 
@@ -785,7 +785,7 @@ for ( int i = 1; i &lt;= n; i ++ ) {
                 <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;sum:%d\n&quot;</span>, dp[n].second);
         }
         <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-}
+
 </div></code></pre>
 <h2 id="完全背包">完全背包</h2>
 <h3 id="模型-1">模型</h3>
