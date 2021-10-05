@@ -1,183 +1,139 @@
-# Chirpy
+# jekyll-theme-leaf
 
-Language: English | [简体中文](docs/README.zh-CN.md)
+👇👇
 
-[![Build Status](https://github.com/cotes2020/jekyll-theme-chirpy/workflows/build/badge.svg?branch=master&event=push)](https://github.com/cotes2020/jekyll-theme-chirpy/actions?query=branch%3Amaster+event%3Apush)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8220b926db514f13afc3f02b7f884f4b)](https://app.codacy.com/manual/cotes2020/jekyll-theme-chirpy?utm_source=github.com&utm_medium=referral&utm_content=cotes2020/jekyll-theme-chirpy&utm_campaign=Badge_Grade_Dashboard)
-[![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
-[![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
+[Preview Theme](https://supunkavinda.github.io/jekyll-theme-leaf/) 
 
-A minimal, sidebar, responsive web design Jekyll theme that focuses on text presentation. Designed to help you record and share your knowledge easily. [Live Demo »](https://chirpy.cotes.info)
+Jekyll Theme Leaf is a very simple yet beautiful theme created by [Supun Kavinda](https://twitter.com/_SupunKavinda). It is designed for those who love dark sites.
 
-[![Devices Mockup](https://raw.githubusercontent.com/cotes2020/jekyll-theme-chirpy/master/assets/img/sample/devices-mockup.png)](https://chirpy.cotes.info)
-
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [Supporting](#supporting)
-- [License](#license)
-
-## Features
-
-- Pinned Posts
-- Configurable theme mode
-- Double-level Categories
-- Last modified date for posts
-- Table of Contents
-- Automatically recommend related posts
-- Syntax highlighting
-- Mathematical expressions
-- Mermaid diagram & flowchart
-- Search
-- Atom Feeds
-- Disqus Comments
-- Google Analytics
-- GA Pageviews reporting (Advanced)
-- SEO and Performance Optimization
+![Screenshot](https://i.imgur.com/fBiCIuL.png)
 
 ## Installation
 
-[Fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork) on GitHub, rename the repository to `USERNAME.github.io` (where `USERNAME` is your GitHub username), and then open terminal and clone the fork to local by:
+Add this line to your Jekyll site's `Gemfile`:
 
-```terminal
-$ git clone https://github.com/USERNAME/USERNAME.github.io.git -b master --single-branch
+```ruby
+gem "jekyll-theme-leaf"
 ```
 
-### Setting up the local envrionment
+And add this line to your Jekyll site's `_config.yml`:
 
-If you would like to run or build the project on your local machine, please follow the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll` and `Bundler`.
-
-Before running or building for the first time, please complete the installation of the Jekyll plugins. Go to the root directory of project and run:
-
-```terminal
-$ bundle install
+```yaml
+theme: jekyll-theme-leaf
 ```
 
-`bundle` will automatically install all the dependencies specified by `Gemfile`.
+And then execute:
 
-### Setting up Docker environment (optional)
+    $ bundle
 
-If you're a loyal fan of [**Docker**](https://www.docker.com/) or just too lazy to install the packages mentioned in [_Setting up the local envrionment_](#setting-up-the-local-envrionment), please make sure you have **Docker Engine** installed and running, and then get Docker image `jekyll/jekyll` from Docker Hub by the following command:
+Or install it yourself as:
 
-```console
-$ docker pull jekyll/jekyll
-```
+    $ gem install jekyll-theme-leaf
 
 ## Usage
 
-### Initialization
+### Layouts
 
-Go to the root directory of the project and start initialization:
+Refers to files within the `_layouts` directory, that define the markup for your theme.
 
-```console
-$ bash tools/init.sh
+* `default.html` - The base markup of all other layouts.
+* `home.html` - Home or index page layout.
+* `page.html` - Page layout (These are not listed as posts).
+* `posts.html` - Posts layout. These are listed in the home directory.
+
+### Includes
+
+These are the files within the `_includes` directory.
+
+* `footer.html` - Markup for the footer. It's a minimal footer with the site title and twitter and github links.
+* `google-analytics.html` - Contains the [Google Analytics](https://analytics.google.com/analytics/web/) code.
+* `head.html` - Contains the HTML code for the `<head>`.
+* `header.html` - The header/top navigation bar of the site.
+* `hyvor-talk-comments.html` - [Hyvor Talk](https://talk.hyvor.com) installation code with a customized color palette.
+
+### Sass
+
+* `leaf.scss` - The main SCSS file. Contains several variables and mixins.
+* `_base.scss` - Primary styles
+* `_highlight-dark.scss` - Code highlighting
+* `_layout.scss` - Layout SCSS files
+    * `_layout_header.scss` - Styles of the header (`_includes/header.html`)
+    * `_layout_home.scss` - Styles of the home (`_layouts/home.html`)
+    * `_layout-post.scss` - Styles of the post and page layouts (`_layouts/posts.html`, `_layouts/page.html`)
+
+### Assets
+
+* `assets/css/style.css` - Imports `_sass/leaf.scss`.
+* `assets/default-icon.png` - The leaf icon.
+
+### Plugins
+
+Leaf Jekyll theme uses two plugins by default.
+
+* `jekyll-seo-tag` - For better SEO
+* `jekyll-feed` - For RSS feed
+
+## Configuration
+
+Here's the basic `_config.yml` file of this plugin.
+
+```yaml
+title: Leaf Blog
+iconURL: assets/default-icon.png
+theme: jekyll-theme-leaf
+
+permalink: :slug
+
+social:
+  twitter: YOUR_TWITTER
+  github: YOUR_GITHUB
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+### comments & analytics
+hyvor_talk_website_id: YOUR_WEBSITE_ID
+google_analytics: UA-NNNNNNNN-N
 ```
 
-> **Note**: If you not intend to deploy it on GitHub Pages, append parameter option `--no-gh` at the end of the above command.
+### Adding Comments
 
-What it does is:
+The Leaf Jekyll theme uses [Hyvor Talk](https://talk.hyvor.com) comments. The colors are customized based for the theme therefore you don't need to customize colors in the console.
 
-1. Remove some files or directories from your repository:
+* First, [login to the Hyvor Talk console](https://talk.hyvor.com/console)
+* Register your website
+* Get your website ID from the **General** section of the console.
+* Then, replace `YOUR_WEBSITE_ID` in the above code in `_config.yml` with your code.
 
-    - `.travis.yml`
-    - files under `_posts`
-    - folder `docs`
+Ex: 
 
-2. If you use the `--no-gh` option, the directory `.github` will be deleted. Otherwise, setup the GitHub Action workflow by removing extension `.hook` of `.github/workflows/pages-deploy.yml.hook`, and then remove the other files and directories in folder `.github`.
-
-3. Automatically create a commit to save the changes.
-
-### Configuration
-
-Generally, go to `_config.yml` and configure the variables as needed. Some of them are typical options:
-
-- `url`
-- `avatar`
-- `timezone`
-- `theme_mode`
-
-### Run Locally
-
-You may want to preview the site contents before publishing, so just run it by:
-
-```terminal
-$ bundle exec jekyll s
+```yaml
+hyvor_talk_website_id: 14
 ```
 
-Then open a browser and visit to <http://localhost:4000>.
+### Adding Google Analytics
 
-### Run on Docker
+* Sign up to [Google Analytics](https://analytics.google.com)
+* Add your website and get the tracking ID.
+* Replace `UA-NNNNNNNN-N` with your tracking ID.
 
-Run the site on Docker with the following command:
-
-```terminal
-$ docker run -it --rm \
-    --volume="$PWD:/srv/jekyll" \
-    -p 4000:4000 jekyll/jekyll \
-    jekyll serve
-```
-
-### Deployment
-
-Before the deployment begins, checkout the file `_config.yml` and make sure the `url` is configured correctly. Furthermore, if you prefer the [_project site_](https://help.github.com/en/github/working-with-github-pages/about-github-pages#types-of-github-pages-sites) and don't use a custom domain, or you want to visit your website with a base url on a web server other than **GitHub Pages**, remember to change the `baseurl` to your project name that starting with a slash. For example, `/project`.
-
-Assuming you have already gone through the [initialization](#initialization), you can now choose ONE of the following methods to deploy your website.
-
-#### Deploy on GitHub Pages
-
-For security reasons, GitHub Pages build runs on `safe` mode, which restricts us from using plugins to generate additional page files. Therefore, we can use **GitHub Actions** to build the site, store the built site files on a new branch, and use that branch as the source of the Pages service.
-
-1. Push any commit to `origin/master` to trigger the GitHub Actions workflow. Once the build is complete and successful, a new remote branch named `gh-pages` will appear to store the built site files.
-
-2. Browse to your repo's landing page on GitHub and select the branch `gh-pages` as the [publishing source](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) throught _Settings_ → _Options_ → _GitHub Pages_:
-    ![gh-pages-sources](https://raw.githubusercontent.com/cotes2020/jekyll-theme-chirpy/master/assets/img/sample/gh-pages-sources.png)
-
-3. Visit your website at the address indicated by GitHub.
-
-#### Deploy on Other Platforms
-
-On platforms other than GitHub, we cannot enjoy the convenience of **GitHub Actions**. Therefore, we should build the site locally (or on some other 3rd-party CI platform) and then put the site files on the server.
-
-Go to the root of the source project, build your site by:
-
-```console
-$ JEKYLL_ENV=production bundle exec jekyll b
-```
-
-Or, build the site with Docker by:
-
-```terminal
-$ docker run -it --rm \
-    --env JEKYLL_ENV=production \
-    --volume="$PWD:/srv/jekyll" \
-    jekyll/jekyll \
-    jekyll build
-```
-
-Unless you specified the output path, the generated site files will be placed in folder `_site` of the project's root directory. Now you should upload those files to your web server.
-
-### Documentation
-
-For more details and the better reading experience, please check out the [tutorials on demo site](https://chirpy.cotes.info/categories/tutorial/). In the meanwhile, a copy of the tutorial is also available on the [Wiki](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+Google Analytics will only appear in production.
 
 ## Contributing
 
-The old saying, "Two heads are better than one." Consequently, welcome to report bugs, improve code quality or submit a new feature. For more information, see [contributing guidelines](.github/CONTRIBUTING.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/SupunKavinda/jekyll-theme-leaf. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-## Credits
+## Development
 
-This theme is mainly built with [Jekyll](https://jekyllrb.com/) ecosystem, [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/) and some other wonderful tools (their copyright information can be found in the relevant files).
+To set up your environment to develop this theme, run `bundle install`.
 
-:tada: Thanks to all the volunteers who contributed to this project, their GitHub IDs are on [this list](https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors). Also, I won't forget those guys who submitted the issues or unmerged PR because they reported bugs, shared ideas or inspired me to write more readable documentation.
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-## Supporting
-
-If you enjoy this theme or find it helpful, please consider becoming my sponsor, I'd really appreciate it! Click the button <kbd>:heart: Sponsor</kbd> at the top of the [Home Page](https://github.com/cotes2020/jekyll-theme-chirpy) and choose a link that suits you to donate; this will encourage and help me better maintain the project.
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `leaf.gemspec` accordingly.
 
 ## License
 
-This work is published under [MIT](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE) License.
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
