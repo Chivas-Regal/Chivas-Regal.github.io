@@ -1,154 +1,104 @@
-<div align="right">
-  Language:
-  🇺🇸
-  <a title="Chinese" href="docs/zh-CN/README.md">🇨🇳</a>
-  <a title="Russian" href="docs/ru/README.md">🇷🇺</a>
-</div>
+# Hydrogen
+轻盈、干净
 
-# <div align="center"><a title="NexT website repository" href="https://github.com/theme-next/theme-next.org"><img align="center" width="56" height="56" src="https://raw.githubusercontent.com/theme-next/hexo-theme-next/master/source/images/logo.svg?sanitize=true"></a> e x T</div>
+跟随她的脚步，开始你的博客之旅
 
-<p align="center">
-  «NexT» is a high quality elegant <a href="https://hexo.io">Hexo</a> theme. It is crafted from scratch with love.
-<br>
-<br>
-  <a href="https://www.npmjs.com/package/hexo-theme-next"><img src="https://img.shields.io/github/package-json/v/theme-next/hexo-theme-next?style=flat-square"></a>
-  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/node-%3E=10.9.0-green?style=flat-square"></a>
-  <a href="https://hexo.io"><img src="https://img.shields.io/badge/hexo-%3E=4.0.0-blue?style=flat-square&logo=hexo"></a>
-  <a href="https://github.com/theme-next/hexo-theme-next/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-%20AGPL-orange?style=flat-square&logo=gnu"></a>
-<br>
-  <a href="https://bestpractices.coreinfrastructure.org/projects/2625"><img src="https://img.shields.io/cii/level/2625?style=flat-square" title="Core Infrastructure Initiative Best Practices"></a>
-  <a href="https://travis-ci.org/theme-next/hexo-theme-next?branch=master"><img src="https://img.shields.io/travis/theme-next/hexo-theme-next/master?style=flat-square&logo=travis%20ci" title="Travis CI [Linux]"></a>
-  <a href="https://app.codacy.com/manual/theme-next/hexo-theme-next/dashboard"><img src="https://img.shields.io/codacy/grade/72f7fe7609c2438a92069f448e5a341a/master?style=flat-square&logo=codacy" title="Project Grade"></a>
-  <img src="https://img.shields.io/snyk/vulnerabilities/github/theme-next/hexo-theme-next?style=flat-square" title="Vulnerabilities">
-<br>
-  <img src="https://user-images.githubusercontent.com/16272760/63487983-da41b080-c4df-11e9-951c-64883a8a5e9b.png">
-</p>
+>厌倦了无止境的加载以及繁杂的页面内容？那您很幸运，因为您发现了Hydrogen
+><br>我们避免繁杂 使用轻量化的模块来渲染在您屏幕上展示出来的一切 
+><br>当您使用过后就知道，她带给你的不仅仅只有简洁极速的阅读体验...
 
-## Live Preview
+语言：简体中文 | [English](README-en.md)
 
-<p align="center">
-  💟 <a href="https://muse.theme-next.org">Muse</a> | 🔯 <a href="https://mist.theme-next.org">Mist</a> | ♓️ <a href="https://pisces.theme-next.org">Pisces</a> | ♊️ <a href="https://theme-next.org">Gemini</a>
-<br>
-<br>
-  More «NexT» examples <a href="https://github.com/theme-next/awesome-next#live-preview">here</a>.
-</p>
+![hydrogen](/theme/logo-h.svg)
 
-## Installation
+~~点点~~Star~~来一个好吗！秋梨膏！！~~
 
-The simplest way to install is to clone the entire repository:
+# #快速开始
 
-```sh
-$ cd hexo
-$ git clone https://github.com/theme-next/hexo-theme-next themes/next
+![hydrogen](/theme/a-h.png)
+
+## #准备
+
+打开主题根目录下的`_config.yml`
+
+根据需求修改以下选项：
+
+`title` : 更改你的博客名字
+
+`description` : 更改你的博客描述
+
+`keywords` : 博客关键词(SEO相关)
+
+`baseurl` : 博客所在的目录文件夹，开头需带上`/`，如果为根目录请留空(建议将博客放置在根目录)
+
+`url` : 你的域名，如`atlinker.cn`无需加`http/https://`
+
+`bulidtime` : 博客建立时的时间戳，填写后将自动计算博客建立时间并显示在页脚. [日期转时间戳](https://tool.lu/timestamp/)
+
+`paginate` : 主页中显示的最大文章数，超过设定的数值文章自动归入下一页
+
+`background` : 博客首页主题图片路径
+
+`theme_color` : 博客顶部栏颜色，填颜色代码**但不要带上#号**
+
+`MathJax` : 是否开启MathJax(布尔值)
+
+`author` : 作者名
+
+> 开发者选项
+>> `PJAX` : PJAX无刷新加载(布尔值)
+
+## #设置域名
+
+修改根目录下的CNAME文件为你的域名即可
+
+#### 关于主题的基本设置已经完毕~
+
+---
+
+## #友链添加
+
+打开`_data`目录下的`friends.yml`文件，根据文件中模板新添代码即可
+
+---
+
+## #文章置顶
+
+在文章Front Matter添加stickie: true即可
+
+如：
+
+```
+ ---
+ layout: post
+ title: Hi
+ stickie: true
+ ---
 ```
 
-Or you can see [detailed installation instructions][docs-installation-url] if you want any other variant.
+## #评论
 
-## Plugins
+#### #前提
 
-NexT supports a large number of third-party plugins, which can be easily configured.
+> 必须确定已阅读[Valine](https://valine.js.org/quickstart.html)文档
 
-For example, if you want to enable `pjax` on your site, just set `pjax` to `true` in NexT config file:
+配置文件:
 
-```yml
-# Easily enable fast Ajax navigation on your website.
-# Dependencies: https://github.com/theme-next/theme-next-pjax
-pjax: true
-```
+`_data/social.yml` : 填写app id和key以及评论的相关信息
 
-Then visit the «Dependencies» link to get the installation instructions of this module.
+`_includes/comments.html` : 评论设置
 
-### Configure CDN
+确保配置无误后修改`_data/social.yml`中的`enable`值由`false`改为`true`即可
 
-If you want to specify a CDN link for any plugins, you need to set / update the CDN link.
+## #写在最后
 
-For example, if you want to use `mediumzoom` and load the plugin via CDN, go to NexT config and see:
+请花10分钟时间**认真**阅读文档，如还有疑难之处，请提[issues](https://github.com/link9596/hydrogen/issues/new)，我会尽力帮忙
 
-```yml
-vendors:
-  # ...
-  # Some contents...
-  # ...
-  mediumzoom: # Set or update mediumzoom CDN URL.
-```
+如使用过程有任何疑难Bug，也请提出[issues](https://github.com/link9596/hydrogen/issues/new)！ :+1:
 
-## Update
+最后，如果喜欢~请给项目点个star:wink:(点star的dalao都超级靓的)
 
-NexT releases new versions every month. You can update to latest master branch by the following command:
+![hydrogen](/theme/author.svg)
 
-```sh
-$ cd themes/next
-$ git pull
-```
-
-And if you see any error message during update (something like **«Commit your changes or stash them before you can merge»**), recommended to learn [Hexo data files][docs-data-files-url] feature.\
-However, you can bypass update errors by using the `Commit`, `Stash` or `Reset` commands for local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
-
-**If you want to update from v5.1.x to the latest version, read [this][docs-update-5-1-x-url].**
-
-## Feedback
-
-* Visit the [Awesome NexT][awesome-next-url] list to share plugins and tutorials with other users.
-* Join our [Telegram][t-chat-url] / [Gitter][gitter-url] / [Riot][riot-url] chats.
-* [Add or improve translation][i18n-url] in few seconds.
-* Report a bug in [GitHub Issues][issues-bug-url].
-* Request a new feature on [GitHub][issues-feat-url].
-* Vote for [popular feature requests][feat-req-vote-url].
-
-## Contributing
-
-We welcome you to join the development of NexT. Please see [contributing document][contributing-document-url]. 🤗
-
-Also, we welcome Issue or PR to our [official-plugins][official-plugins-url].
-
-## Contributors
-
-[![][contributors-image]][contributors-url]
-
-## Thanks
-
-<p align="center">
-  «NexT» send special thanks to these great services that sponsor our core infrastructure:
-<br>
-<br>
-  <a href="https://github.com"><img align="center" width="100" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"></a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://www.netlify.com"><img align="center" width="150" src="https://cdn.netlify.com/15ecf59b59c9d04b88097c6b5d2c7e8a7d1302d0/1b6d6/img/press/logos/full-logo-light.svg"></a>
-<br>
-<br>
-  <sub>GitHub allows us to host the Git repository, Netlify allows us to distribute the documentation.</sub>
-<br>
-<br>
-  <a href="https://crowdin.com"><img align="center" width="180" src="https://support.crowdin.com/assets/logos/crowdin-logo1-small.png"></a>
-<br>
-<br>
-  <sub>Crowdin allows us to translate conveniently the documentation.</sub>
-<br>
-<br>
-  <a href="https://codacy.com"><img align="center" width="155" src="https://user-images.githubusercontent.com/16944225/55026017-623f8f00-5002-11e9-88bf-0d6a5884c6c2.png"></a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://travis-ci.com"><img align="center" width="140" src="https://raw.githubusercontent.com/travis-ci/travis-web/master/public/images/logos/TravisCI-Full-Color.png"></a>
-<br>
-<br>
-  <sub>Codacy allows us to monitor code quality, Travis CI allows us to run the test suite.</sub>
-</p>
-
-[docs-installation-url]: https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md
-[docs-data-files-url]: https://github.com/theme-next/hexo-theme-next/blob/master/docs/DATA-FILES.md
-[docs-update-5-1-x-url]: https://github.com/theme-next/hexo-theme-next/blob/master/docs/UPDATE-FROM-5.1.X.md
-
-[t-news-url]: https://t.me/theme_next_news
-[t-chat-url]: https://t.me/theme_next
-[gitter-url]: https://gitter.im/theme-next
-[riot-url]: https://riot.im/app/#/room/#theme-next:matrix.org
-[i18n-url]: https://i18n.theme-next.org
-
-[awesome-next-url]: https://github.com/theme-next/awesome-next
-[issues-bug-url]: https://github.com/theme-next/hexo-theme-next/issues/new?assignees=&labels=Bug&template=bug-report.md
-[issues-feat-url]: https://github.com/theme-next/hexo-theme-next/issues/new?assignees=&labels=Feature+Request&template=feature-request.md
-[feat-req-vote-url]: https://github.com/theme-next/hexo-theme-next/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22
-
-[contributing-document-url]: https://github.com/theme-next/hexo-theme-next/blob/master/.github/CONTRIBUTING.md
-[official-plugins-url]: https://github.com/theme-next
-[contributors-image]: https://opencollective.com/theme-next/contributors.svg?width=890
-[contributors-url]: https://github.com/theme-next/hexo-theme-next/graphs/contributors
+![](https://img.shields.io/github/repo-size/link9596/hydrogen?color=%23F8BBD0)
+![](https://img.shields.io/github/release/link9596/hydrogen?color=%235C6BC0&label=Version)
