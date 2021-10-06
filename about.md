@@ -29,18 +29,14 @@ key: page-about
 
 
 
-<a style="
-display: block;
-height: 400px;"
-href="https://github.com/Chivas-Regal"
->
+
+<a href="https://github.com/Chivas-Regal">
 <img src="https://i.loli.net/2021/10/06/r18V35lIOm2KAdW.jpg"
 style="
 	display: block;
-	width: 500px;
+	width: 600px;
 	border-radius: 50%;
 	top: 200px;
-	float: left;
 "></a>
 
 <div>
