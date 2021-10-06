@@ -17,7 +17,7 @@
 ## => Site Settings
 ##############################
 text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+highlight_theme: "default" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : Chivas_Regal
@@ -127,11 +127,11 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 00c4c33ca4c2925033db # GitHub Application Client ID
-    clientSecret: bc88708f518dca4db1d7fbb3892a64e419685c51 # GitHub Application Client Secret
-    repository  : Blog-Talking # GitHub repo
+    clientID    : 0521967cae1d435ee65b # GitHub Application Client ID
+    clientSecret: 4939d1a8e3950110e3cb0a61c48fdccb58e6f00d # GitHub Application Client Secret
+    repository  : Chivas_Regal # GitHub repo
     owner       : 1411390466@qq.com # GitHub repo owner
-    admin: 1411390466@qq.com# GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    admin: 1411390466@qq.com # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
   ## Valine
@@ -147,7 +147,7 @@ comments:
 ## => Pageview
 ##############################
 pageview:
-  provider: leancloud # false (default), "leancloud", "custom"
+  provider: "leancloud" # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
