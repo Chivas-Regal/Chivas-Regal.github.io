@@ -2,14 +2,42 @@ docs-en:
   - title:      数据结构
     children:
       - title:  主席树
-        url:    https://github.com/Chivas-Regal/Chivas-Regal.github.io/blob/main/_posts/2021-09-23-%E4%B8%BB%E5%B8%AD%E6%A0%91.md
+        url:    https://chivas-regal.github.io/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2021/09/23/%E4%B8%BB%E5%B8%AD%E6%A0%91.html
+      - title:  莫队
+        url:    https://chivas-regal.github.io/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2021/09/11/%E8%8E%AB%E9%98%9F%E7%AE%97%E6%B3%95.html
   - title:      数学
     children:
       - title:  中国剩余定理
-        url:    /_posts/2021-07-16-中国剩余定理.md
+        url:    https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/07/16/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html
       - title:  线性基
-        url:    /_posts/2021-07-24-线性基.md
-
+        url:    https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/07/24/%E7%BA%BF%E6%80%A7%E5%9F%BA.html
+      - title:  数学推导
+        url:    https://chivas-regal.github.io/%E6%8E%A8%E5%AF%BC/2021/08/27/%E6%95%B0%E5%AD%A6%E6%8E%A8%E5%AF%BC.html
+      - title:  高斯消元
+        url:    https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/08/23/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83.html
+      - title:  FFT
+        url:    https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/08/15/%E5%BF%AB%E9%80%9F%E5%82%85%E7%AB%8B%E5%8F%B6%E5%8F%98%E6%8D%A2FFT.html
+      - title:  BSGS
+        url:    https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/08/11/BSGS.html
+      - title:  莫比乌斯反演
+        url:    https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/07/17/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94M%C3%B6biusInversionFormula.html
+      - title:  欧拉函数与欧拉定理
+        url:    https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/07/16/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0%E5%92%8C%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86.html
+  - title:      图论
+     children:
+      - title:  差分约束
+        url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/09/29/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F.html
+      - title:  2-SAT
+        url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/07/16/2_SAT%E9%97%AE%E9%A2%98.html
+   - title:      动态规划
+     children:
+      - title:  线性DP
+        url:    https://chivas-regal.github.io/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/2021/07/19/%E7%BA%BF%E6%80%A7DP.html
+      - title:  背包DP
+        url:    https://chivas-regal.github.io/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/2021/07/20/%E8%83%8C%E5%8C%85DP.html 
+      - title:  数位DP
+        url:    https://chivas-regal.github.io/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/2021/08/01/%E6%95%B0%E4%BD%8DDP.html
+     
     
 header:
   - titles:
