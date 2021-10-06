@@ -1,16 +1,5 @@
 .search {
   @include overflow(auto);
-
-}
-.search--google-custom-search-engine {
-  .main {
-    padding-top: map-get($spacers, 4);
-    padding-bottom: map-get($spacers, 4);
-    @include media-breakpoint-down(md) {
-      position: absolute;
-      padding: 0;
-    }
-  }
 }
 
 .search__header {
@@ -170,17 +159,8 @@
         }
       }
       @include active() {
-        @include transition(map-get($clickable, transition));
+        @include transition(map-get($link, transition));
       }
     }
-  }
-}
-
-// google search
-.gsc-control-cse {
-  *,
-  ::before,
-  ::after {
-    box-sizing: initial;
   }
 }

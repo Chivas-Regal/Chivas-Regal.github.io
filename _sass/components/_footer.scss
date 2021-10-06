@@ -5,12 +5,16 @@
 .footer {
   @include flexbox();
   @include align-items(center);
-  color: $footer-text-color;
+  height: map-get($layout, footer-height);
   background: $footer-background;
+  p {
+    color: $footer-text-color;
+  }
   a {
     @include link-colors ($footer-text-color, $main-color-1);
   }
   .site-info {
+    margin: map-get($spacers, 3) auto 0 auto;
     font-size: map-get($base, font-size-xs);
     text-align: center;
     .menu {
@@ -28,6 +32,7 @@
 .footer__author-links {
   @include overflow(auto);
   .author-links {
+    padding-top: map-get($spacers, 3);
     text-align: center;
   }
 }

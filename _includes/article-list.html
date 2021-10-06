@@ -2,7 +2,7 @@
 
 {%- assign _excerpt_type = include.excerpt_type -%}
 
-{%- include snippets/get-locale-string.html key='READMORE' -%}
+{%- include snippets/locale-to-string.html locale=site.data.locale.READMORE -%}
 {%- assign _locale_readmore = __return -%}
 
 {%- assign _sorted_list = include.articles -%}
@@ -18,11 +18,7 @@
 {%- elsif include.type == 'brief' -%}
 <div class="article-list items">
 {%- elsif include.type == 'grid' -%}
-  {%- if include.size == 'sm' -%}
-  <div class="article-list grid grid--sm grid--p-3">
-  {%- else -%}
-  <div class="article-list grid grid--p-3">
-  {%- endif -%}
+<div class="article-list grid grid--p-3">
 {%- endif -%}
 
   {%- for _article in _sorted_list -%}
@@ -55,7 +51,7 @@
           </div>
         {%- endif -%}
         <div class="item__content">
-          <header><a href="{{ _article_url }}"><h2 itemprop="headline" class="item__header">{{ _article.title }}</h2></a></header>
+          <header><h2 itemprop="headline" class="item__header"><a href="{{ _article_url }}">{{ _article.title }}</a></h2></header>
           <div class="item__description">
             {%- if _article.excerpt and include.show_excerpt -%}
               <div class="article__content" itemprop="description articleBody">
@@ -98,7 +94,7 @@
           {%- assign _date = _currentdate -%}
         {%- endif -%}
       {%- endif -%}
-      {%- include snippets/get-locale-string.html key='ARTICLE_LIST_DATE_FORMAT' -%}
+      {%- include snippets/locale-to-string.html locale=site.data.locale.ARTICLE_LIST_DATE_FORMAT -%}
       <li class="item" itemscope itemtype="http://schema.org/BlogPosting" data-tags="{{ _tags }}">
         <div class="item__content">
           {%- if include.show_info -%}
@@ -110,13 +106,13 @@
     {%- elsif include.type == 'grid' -%}
       {%- if include.size == 'sm' -%}
         <div class="cell cell--12 cell--md-4 cell--lg-3">
-          <div class="card card--flat">
+          <div class="card">
             {%- if _article.cover -%}
               <div class="card__image">
                 <img class="image" src="{{ _article_cover }}" />
                 <div class="overlay overlay--bottom">
                   <header>
-                    <a href="{{ _article_url }}"><h2 class="card__header">{{ _article.title }}</h2></a>
+                    <a class="card__header" href="{{ _article_url }}">{{ _article.title }}</a>
                   </header>
                 </div>
               </div>
@@ -132,7 +128,7 @@
             {%- endif -%}
               <div class="card__content">
                 <header>
-                  <a href="{{ _article_url }}"><h2 class="card__header">{{ _article.title }}</h2></a>
+                  <h2 class="card__header"><a href="{{ _article_url }}">{{ _article.title }}</a></h2>
                 </header>
               </div>
           </div>
