@@ -157,15 +157,15 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+    app_id    : RJ50RF5BLtwKMFRExnOMqh3k-gzGzoHsz # LeanCloud App id
+    app_key   : W30Aug6XcrXrCkirCwdsvcEV # LeanCloud App key
+    app_class : GithubPage Talking # LeanCloud App class
 
 
 ## => Search
 ##############################
 search:
-  provider: default # "default" (default), false, "google", "custom"
+  provider: "google" # "default" (default), false, "google", "custom"
 
   ## Google Custom Search Engine
   google:
