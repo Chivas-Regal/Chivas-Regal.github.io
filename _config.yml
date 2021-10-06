@@ -118,7 +118,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: "valine" # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: "gitalk" # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -127,11 +127,11 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 0521967cae1d435ee65b # GitHub Application Client ID
-    clientSecret: 4939d1a8e3950110e3cb0a61c48fdccb58e6f00d # GitHub Application Client Secret
-    repository  : Chivas_Regal # GitHub repo
-    owner       : 1411390466@qq.com # GitHub repo owner
-    admin: 1411390466@qq.com # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    clientID    : c66603e30b7b58583894 # GitHub Application Client ID
+    clientSecret: aacc3065b21d7025737e0b620eda5ab2ce9ef440 # GitHub Application Client Secret
+    repository  : Chivas-Regal.github.io # GitHub repo
+    owner       : Chivas-Regal # GitHub repo owner
+    admin       : Chivas-Regal # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
   ## Valine
