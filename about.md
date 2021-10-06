@@ -26,6 +26,39 @@ titles:
 key: page-about
 ---
 
+<div style="
+width: 100%;
+height: 900px;
+text-align: center;">
+<div>
+<img src="https://i.loli.net/2021/10/06/r18V35lIOm2KAdW.jpg"
+style="display: block;
+border-radius: 50%;
+width: 700px;
+left: 50%;
+float: left;">
+<a href="https://github.com/Chivas-Regal/ACM" style="
+color: #ffffff;
+display: block;
+float: left;
+padding: 5px;
+"><div style="
+                  background-color: orange;
+                  border-radius: 20px; 
+                  width: 400px;
+                  height: 120px;
+                  color: white;
+                  text-align: center;
+                  font-family: Fira Code;
+                  font-size: 40px;
+                  line-height: 3;
+                  ">Chivas_Regal</div></a>
+</div>
+</div>
+<b><p style="
+color: #ffffff;
+font-size: 50px;
+">Repositories</p></b>
 <div>
 <a href="https://github.com/Chivas-Regal/ACM" style="
 color: #ffffff;
@@ -92,4 +125,3 @@ padding: 5px;
                   line-height: 4;
                   ">Web</div></a>
 </div>
-
