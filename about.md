@@ -27,32 +27,29 @@ key: page-about
 ---
 
 
+
 <a style="
-border-radius: 60px;
 display: block;
-height: 500px;
-weight: 100%;
-color: #ffffff;
-text-align: center;"
+height: 200px;"
 href="https://github.com/Chivas-Regal"
 >
 <img src="https://i.loli.net/2021/10/06/r18V35lIOm2KAdW.jpg"
 style="
 	display: block;
-	width: 600px;
+	width: 400px;
 	border-radius: 50%;
-	position: absolute;
-	margin-left: 50%;
 	top: 200px;
-	left: -250px;
+	float: left;
 "><p style="
 	display: block;
-	position: absolute;
+	height: 400px;
+	margin: 20px;
+	margin-top: -30px;
 	text-align: center;
-	color: #ffffff;
-	font-size: 50px;">
-Chivas_Regal</p>
-</a>
+	color: #000000;
+	font-size: 50px;
+	float: left;">
+Chivas_Regal</p></a>
 
 <p style="
 color: #000000;
