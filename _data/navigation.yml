@@ -1,5 +1,4 @@
-sidebar:
-  nav: docs-en
+
 header:
   - titles:
       # @start locale config
@@ -51,16 +50,4 @@ header:
       # @end locale config
     url: /about.html
     
-docs-en:
-  - title:      Start
-    children:
-      - title:  Quick Start
-    url:    /docs/en/quick-start
-      - title:  Structure
-    url:    /docs/en/structure
-  - title:      Customization
-    children:
-      - title:  Configuration
-        url:    /docs/en/configuration
-      - title:  Navigation
-        url:    /docs/en/navigation
+
