@@ -28,34 +28,21 @@ key: page-about
 
 
 
+
 <a style="
 display: block;
-height: 200px;"
+height: 400px;"
 href="https://github.com/Chivas-Regal"
 >
 <img src="https://i.loli.net/2021/10/06/r18V35lIOm2KAdW.jpg"
 style="
 	display: block;
-	width: 400px;
+	width: 500px;
 	border-radius: 50%;
 	top: 200px;
 	float: left;
-"><p style="
-	display: block;
-	height: 400px;
-	margin: 20px;
-	margin-top: -30px;
-	text-align: center;
-	color: #000000;
-	font-size: 50px;
-	float: left;">
-Chivas_Regal</p></a>
+"></a>
 
-<p style="
-color: #000000;
-font-size: 30px;
-font-weight: 100px;
-">Repositories</p>
 <div>
 <a href="https://github.com/Chivas-Regal/ACM" style="
 color: #ffffff;
