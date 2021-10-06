@@ -2,7 +2,7 @@ docs-en:
   - title:      数据结构
     children:
       - title:  主席树
-        url:    /_posts/2021-09-23-主席树.md
+        url:    https://github.com/Chivas-Regal/Chivas-Regal.github.io/blob/main/_posts/2021-09-23-%E4%B8%BB%E5%B8%AD%E6%A0%91.md
   - title:      数学
     children:
       - title:  中国剩余定理
