@@ -29,5 +29,6 @@ key: page-about
 <a href="https://github.com/Chivas-Regal/ACM" style="
                   background: #9FC6CB;
                   border-radius: 10px; 
-                  width: 50px;
-                  height: 30px;">ACM</a>
+                  width: 200px;
+                  height: 120px;
+                  color: white;">ACM</a>
