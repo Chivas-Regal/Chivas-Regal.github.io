@@ -26,9 +26,70 @@ titles:
 key: page-about
 ---
 
+<div>
 <a href="https://github.com/Chivas-Regal/ACM" style="
-                  background: #9FC6CB;
-                  border-radius: 10px; 
+color: #ffffff;
+display: block;
+float: left;
+padding: 5px;
+"><div style="
+                  background-color: #6485D7;
+                  border-radius: 60px; 
                   width: 200px;
                   height: 120px;
-                  color: white;">ACM</a>
+                  color: white;
+                  text-align: center;
+                  font-family: Fira Code;
+                  font-size: 30px;
+                  line-height: 4;
+                  ">ACM</div></a>
+<a href="https://github.com/Chivas-Regal/ZZULI_ACM_PRACTICE" style="
+color: #ffffff;
+display: block;
+float: left;
+padding: 5px;
+"><div style="
+                  background-color: #48BED7;
+                  border-radius: 60px; 
+                  width: 500px;
+                  height: 120px;
+                  color: white;
+                  text-align: center;
+                  font-family: Fira Code;
+                  font-size: 30px;
+                  line-height: 4;
+                  ">ZZULI_ACM_PRACTICE</div></a>
+<a href="https://github.com/Chivas-Regal/Cool-For-Mac" style="
+color: #ffffff;
+display: block;
+float: left;
+padding: 5px;
+"><div style="
+                  background-color: #B7ADD7;
+                  border-radius: 60px; 
+                  width: 400px;
+                  height: 120px;
+                  color: white;
+                  text-align: center;
+                  font-family: Fira Code;
+                  font-size: 30px;
+                  line-height: 4;
+                  ">Cool-For-Mac</div></a>
+<a href="https://github.com/Chivas-Regal/Web" style="
+color: #ffffff;
+display: block;
+float: left;
+padding: 5px;
+"><div style="
+                  background-color: #B6D7B0;
+                  border-radius: 60px; 
+                  width: 200px;
+                  height: 120px;
+                  color: white;
+                  text-align: center;
+                  font-family: Fira Code;
+                  font-size: 30px;
+                  line-height: 4;
+                  ">Web</div></a>
+</div>
+
