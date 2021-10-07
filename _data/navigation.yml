@@ -29,6 +29,8 @@ docs-en:
         url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/09/29/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F.html
       - title:  2-SAT
         url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/07/16/2_SAT%E9%97%AE%E9%A2%98.html
+      - title:  树分治
+        url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/09/28/%E6%A0%91%E5%88%86%E6%B2%BB.html
   - title:      动态规划
     children:
       - title:  线性DP
