@@ -20,8 +20,8 @@ $$μ(n) =
 0          & n有大于1的平方因数 \\
 \end{cases}$$
 
-可以简化为：</br>
-在n无平方因数时： $μ(n) = (-1)^{n的不同质因子的个数}$</br>
+可以简化为：<br />
+在n无平方因数时： $μ(n) = (-1)^{n的不同质因子的个数}$<br />
 其他情况： $\qquad\;\;\;μ(n) = 0$
 ### 🎈性质
 正常情况下在n有x数个不同质因子，m有y数个不同质因子时  
@@ -31,14 +31,14 @@ $$μ(n) =
 4.x偶，y偶，n * m的质因子个数 = x + y = 偶， $μ(n) * μ(m) = \quad1 \;\;* \quad1 \;\;= 1$  
 可以看出莫比乌斯函数是个积性函数
 
-但是特殊情况例如 $n = m = 2$ 时</br>
-$μ(n) = μ(m) = -1$</br>
-$μ(n * m) = 0\;\;!= (-1) * (-1) = μ(n) * μ(m)$</br>
-所以莫比乌斯函数不是完全积性函数</br>
+但是特殊情况例如 $n = m = 2$ 时<br />
+$μ(n) = μ(m) = -1$<br />
+$μ(n * m) = 0\;\;!= (-1) * (-1) = μ(n) * μ(m)$<br />
+所以莫比乌斯函数不是完全积性函数<br />
 
 ### 🎈利用
 $$\sum_{d\mid n}^{}μ(d) = [n = 1]$$
-例如 n = 12时</br>
+例如 n = 12时<br />
 $\sum\limits_{d\mid 12}^{}μ(12) =μ(1)+μ(2)+μ(3)+μ(4)+μ(6)+μ(12) = 1 + (-1) + 1 + 0 + 1 + 0$
 ### 🎈程序
 线性筛打表：
@@ -87,19 +87,19 @@ inline void Mobius(){//线性筛
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210606161231327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Nub3B6WXo=,size_16,color_FFFFFF,t_70)
 ### 🎈思路
 与[[SDOI2008]仪仗队](https://www.luogu.com.cn/problem/P2158)很像
-在一个象限内</br>
-都是让求</br>
-$$\sum_{i = 1}^{N}\sum_{j=1}^{M}[gcd(i,j)=1]$$</br>
-所以我们设置 $$f(n) = \sum_{i = 1}^{N}\sum_{j=1}^{M}[gcd(i,j)=n],\quad f(1) = \;?$$</br>
-但是因为 $f(1)$ 比较难求，所以我们同时要设置一个满足 $F(n) = \sum_{n|d}f(d)$ 的 $F(n)$</br>
-$$F(n) = \sum_{i = 1}^{N}\sum_{j=1}^{M}[n | gcd(i,j)],\quad F(1) =  \sum_{i = 1}^{N}\sum_{j=1}^{M}1$$</br>
-$$\therefore F(n) = \sum_{n|d}f(d),\quad F(1) = \sum_{d = 1}^{min(N,M)}f(d)$$</br>
-$$\therefore f(n) = \sum_{n|d}\mu(\frac dn)F(d),\quad f(1) = \sum_{d=1}^{min(N,M)}\mu(d)F(d)$$</br>
-$$\because 1 \le d \le min(N, M)$$</br>
-$$\therefore F(d) = \left \lfloor \frac Nd \right \rfloor * \left \lfloor \frac Md \right \rfloor$$</br>
-$$\therefore f(1) = \sum_{d=1}^{min(N,M)}\mu(d) * \left \lfloor \frac Nd \right \rfloor * \left \lfloor \frac Md \right \rfloor$$</br>
-由于四个象限 + 四个坐标轴，所以分子为 $4 * \sum_{d = 1}^{min(N, M)}μ(d)*\left \lfloor \frac nd \right \rfloor *\left \lfloor \frac md \right \rfloor + 4$</br>
-分母则是所有的树 $(N * 2 + 1) * (M * 2 + 1) - 1$</br>
+在一个象限内<br />
+都是让求<br />
+$$\sum_{i = 1}^{N}\sum_{j=1}^{M}[gcd(i,j)=1]$$<br />
+所以我们设置 $$f(n) = \sum_{i = 1}^{N}\sum_{j=1}^{M}[gcd(i,j)=n],\quad f(1) = \;?$$<br />
+但是因为 $f(1)$ 比较难求，所以我们同时要设置一个满足 $F(n) = \sum_{n|d}f(d)$ 的 $F(n)$<br />
+$$F(n) = \sum_{i = 1}^{N}\sum_{j=1}^{M}[n | gcd(i,j)],\quad F(1) =  \sum_{i = 1}^{N}\sum_{j=1}^{M}1$$<br />
+$$\therefore F(n) = \sum_{n|d}f(d),\quad F(1) = \sum_{d = 1}^{min(N,M)}f(d)$$<br />
+$$\therefore f(n) = \sum_{n|d}\mu(\frac dn)F(d),\quad f(1) = \sum_{d=1}^{min(N,M)}\mu(d)F(d)$$<br />
+$$\because 1 \le d \le min(N, M)$$<br />
+$$\therefore F(d) = \left \lfloor \frac Nd \right \rfloor * \left \lfloor \frac Md \right \rfloor$$<br />
+$$\therefore f(1) = \sum_{d=1}^{min(N,M)}\mu(d) * \left \lfloor \frac Nd \right \rfloor * \left \lfloor \frac Md \right \rfloor$$<br />
+由于四个象限 + 四个坐标轴，所以分子为 $4 * \sum_{d = 1}^{min(N, M)}μ(d)*\left \lfloor \frac nd \right \rfloor *\left \lfloor \frac md \right \rfloor + 4$<br />
+分母则是所有的树 $(N * 2 + 1) * (M * 2 + 1) - 1$<br />
 
 答案则是 $\frac {4 * \sum_{d = 1}^{min(N, M)}μ(d)*\left \lfloor \frac nd \right \rfloor *\left \lfloor \frac md \right \rfloor + 4}{(N * 2 + 1) * (M * 2 + 1) - 1}$ 保留7位小数
 ### 🎈程序
