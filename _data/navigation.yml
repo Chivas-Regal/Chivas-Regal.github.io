@@ -55,6 +55,8 @@ docs-en:
         url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/10/13/Matrix-tree%E5%AE%9A%E7%90%86.html
       - title:  虚树
         url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/10/17/%E8%99%9A%E6%A0%91.html
+      - title:  Prufer编码
+        url:    https://chivas-regal.github.io/%E5%9B%BE%E8%AE%BA/2021/11/03/Prufer%E7%BC%96%E7%A0%81.html
   - title:      动态规划
     children:
       - title:  线性DP
