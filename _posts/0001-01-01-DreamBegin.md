@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: home
 show_date: false
 align: center
 license: false
