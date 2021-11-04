@@ -9,3 +9,11 @@ title: Chivas_Regal
 sidebar:
   nav: docs-en
 ---
+<div class="layout--home">
+  {%- include paginator.html -%}
+</div>
+<script>
+  {%- include scripts/home.js -%}
+</script>
+
+{{ content }}
