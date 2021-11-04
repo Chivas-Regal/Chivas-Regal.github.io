@@ -127,12 +127,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : "c2aa9b71936de54bce7d"# GitHub Application Client ID
-    clientSecret: "ed51e8f0bd9837bc5734d1e11b23d04672a8ebf4"# GitHub Application Client Secret
-    repository  : "Chivas-Regal.github.io"
-    owner       : "Chivas-Regal"
-    admin: "Chivas-Regal"# GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      "1411390466@qq.com"# - your GitHub Id
+    clientID    : c2aa9b71936de54bce7d# GitHub Application Client ID
+    clientSecret: ed51e8f0bd9837bc5734d1e11b23d04672a8ebf4# GitHub Application Client Secret
+    repository  : Chivas-Regal.github.io
+    owner       : Chivas-Regal
+    admin: Chivas-Regal# GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+      # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
