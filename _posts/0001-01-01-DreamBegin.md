@@ -9,11 +9,10 @@ title: Chivas_Regal
 sidebar:
   nav: docs-en
 ---
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
-<script>
-  {%- include scripts/home.js -%}
-</script>
-
-{{ content }}
+<img src="https://img-blog.csdnimg.cn/8548ac55863441f8b62c8c744294dd26.jpg" style="
+	height: 40%;
+	width: 40%;
+	margin-left: 30%;
+	border-radius: 50%;
+">
+<h1 align="center">Chivas_Regal</h1>
