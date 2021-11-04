@@ -1,4 +1,5 @@
 ---
+key: 2021-07-17-莫比乌斯反演MöbiusInversionFormula
 layout: article
 title: 莫比乌斯反演MöbiusInversionFormula
 subtitle: 复杂的式子经过反演竟然可以变得这么简单？🤔
