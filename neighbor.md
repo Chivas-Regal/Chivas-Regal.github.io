@@ -16,7 +16,7 @@ key: page-about
 
 <table border="0">
 <tr>
-<td><img src="https://img-blog.csdnimg.cn/72be36ee70514bffa30c596f6ee45a32.png" style="border-radius: 50%; width: 36%; margin-left: 32%;"></td><td><img src="https://img-blog.csdnimg.cn/eb957e0d977d437c91229626d3975a32.png" style="width: 36%; margin-left: 32%;"></td>
+<td width="50%"><img src="https://img-blog.csdnimg.cn/72be36ee70514bffa30c596f6ee45a32.png" style="border-radius: 50%; width: 36%; margin-left: 32%;"></td><td width="50%"><img src="https://img-blog.csdnimg.cn/eb957e0d977d437c91229626d3975a32.png" style="width: 36%; margin-left: 32%;"></td>
 </tr>
 <td style="text-align:center;"><button style="background-color: transparent;border: 2px #1791FF solid;"><a href="https://www.therehello.top/" style="color: #1791FF; font-weight: 700;">There,hello</a></button></td><td style="text-align:center;"><button style="background-color: transparent;border: 2px #1791FF solid;"><a href="https://blog.probius.xyz/" style="color: #1791FF; font-weight: 700;">探姬</a></button></td>
 </table>
