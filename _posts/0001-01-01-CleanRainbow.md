@@ -3,9 +3,9 @@ layout: home
 show_date: false
 align: center
 license: false
-author: CleanRainbow
+author: Chivas_Regal
 key: index-clean-rainbow
-title: CleanRainbow
+title: Chivas_Regal
 sidebar:
   nav: web-header
 ---
@@ -15,4 +15,4 @@ sidebar:
 	margin-left: 30%;
 	border-radius: 50%;
 ">
-<h1 align="center">CleanRainbow</h1>
+<h1 align="center">Chivas_Regal</h1>
