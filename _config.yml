@@ -127,8 +127,8 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : c2aa9b71936de54bce7d# GitHub Application Client ID
-    clientSecret: ed51e8f0bd9837bc5734d1e11b23d04672a8ebf4# GitHub Application Client Secret
+    clientID    : c2aa9b71936de54bce7d # GitHub Application Client ID
+    clientSecret: 19d76c241654472d1835a76a545a223de068d8f1 # GitHub Application Client Secret
     repository  : Chivas-Regal.github.io
     owner       : Chivas-Regal
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
