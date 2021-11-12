@@ -13,54 +13,9 @@ sidebar:
 
 >对于一个无向图，我们想知道它的生成树数量
 
-# 前置知识——行列式
+# 前置知识——高斯消元解行列式  
 
-## 定义
-
-一个$n$阶方阵也就是 $A$ 行列式的值记为 $det(A)$ 或 $|A|$  
-$$det(A)=\sum\limits_P(-1)^{inv(P)}\prod\limits_iA_{1,P_1}...A_{n,P_n}$$  
-$P=permutation(1...n)$  
-$inv$是当前排列$P$的逆序对数量
-
-## 性质  
-
-$1.$ 交换行列式两行(列)，行列式的值<span style="color: red;">变号</span>  
-$2.$ 一个上三角行列式的值是<span style="color: red;">主对角线的累乘</span>  
-$3.$ 行列式一行(列)乘或除任意数值不影响整个行列式的值  
-$4.$ 行列式一行(列)减去另一行(列)后不影响整个行列式的值
-
-## 性质应用——高斯消元  
-
-高斯消元可以将一个行列式<mark>主对角线下面的部分解成全部是0</mark>的情况  
-主体思路请看[高斯消元](https://chivas-regal.github.io/%E6%95%B0%E5%AD%A6/2021/08/23/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83.html)  
-在这里我们要完整地解出一个全部都是整数的行列式的整数值  
-由于辗转相除法是可以将第二个元素消到$0$，所以可以<mark>结合辗转相除法</mark>使用  
-对于一个我们想要通过第$A_{jj}$个单位消到$0$的单位$A_{ij}$  
-我们可以只考虑他们两个，但是由于操作时为了保证行列式值的正确性我们要<span style="color: red;">操作整行</span>  
-所以记录一下$A_{jj}$除$A_{ij}$后向下取整后的值$d$，对于这个两个我们让$A_{jj}-=A_{ij}\times d$便可实现取模操作，然后对于这两行每一列的两个单位进行同样的操作  
-最后再互换一下，直到我们要消的元素变成0为止
-
-## 计算程序
-
-```cpp
-inline int Gauss ( int n ) {
-	int res = 1;
-	for ( int i = 1; i <= n; i ++ ) { // 在(i, i)上进行消元
-		for ( int ii = i + 1; ii <= n; ii ++ ) { // 将(ii, i)变成0
-			while ( a[ii][i] ) { // 还没有消到 0
-				int d = a[i][i] / a[ii][i];
-				for ( int j = i; j <= n; j ++ )
-					a[i][j] = (a[i][j] - (ll)d * a[ii][j] % mod + mod) % mod,
-					swap ( a[i][j], a[ii][j] );
-				res = -res; // 行(列)互换最后的值要相反
-			}
-		}
-		res = (ll)res * a[i][i] % mod; // 乘对角线
-		if ( res == 0 ) return 0;
-	}
-	return (res % mod + mod) % mod;
-}
-```
+[传送门](http://www.chivas-regal.top/%E6%95%B0%E5%AD%A6/2021/08/23/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83.html)
 
 # 矩阵树定理
 
