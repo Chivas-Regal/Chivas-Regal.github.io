@@ -14,47 +14,63 @@ titles:
 key: page-author
 ---
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Roll Tabs</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" /> 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+        @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Flamenco&family=Monoton&display=swap');
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+        }
+        .name_chivasregal {
+            font-family: 'Monoton', cursive;
+            font-size: 35px;
         }
         :root {
             --clr: #ffffff;
         }
         table {
-            width: 50%;
-            margin-left: 25%;
+            width: 60%;
+            margin-left: 20%;
             text-align: center;
         }
         td{
             font-size: 30px;
-            font-family: 'adele';
             border: 1px solid white;
             margin: 0;
+            padding: 5px;
         }
         th{
             font-size: 30px;
             border: 1px solid white;
             margin: 0;
+            padding: 5px;
+        }
+        html{
+            overflow: auto;
+            width: 100%;
+            height:800px;
         }
         body {
+            position: relative;
+            top:0;
+            overflow: auto;
             display: flex;
             justify-content: center;
-            margin-top: 90%;
-            min-height: 20%;
+            width: 100%;
+            height: 200%;
+            /* min-height: 100%; */
             background: var(--clr);
         }
         .navigation {
             position: absolute;
+            /* top:60%; */
+            top:0;
             width: 350px;
             height: 60px;
             background-color: #000000;
@@ -181,11 +197,14 @@ key: page-author
         .navigation ul li.active .QQ {
             opacity: 1;
             transform: translateY(185%);
+            /* position:relative;
+            top:0; */
         }
         .navigation ul li .Person {
             overflow: auto;
             font-size: 25px;
             position: absolute;
+            /* top:-100%; */
             opacity: 0;
             transition: 0.5s;
             color: #ffffff;
@@ -265,13 +284,14 @@ key: page-author
     </style>
 </head>
 <body>
+    <!-- navigation ul .list -->
     <div class="navigation">
-        <ul>
+        <ul>  
             <li class="list active">
                 <div class="Person">
                     <p style="font-size: 50px;">MySelf</p><br><br><br>
                     <b>一位不知名ACMer&nbsp;&nbsp;+&nbsp;&nbsp;前端爱好者</b><br><br>
-                    ACM_ID：<span style="font-family: ADELE;font-size: 30px;">Chivas_Regal</span><br><br>
+                    ACM_ID：<span class="name_chivasregal">Chivas_Regal</span><br><br>
                     <table>
                         <tr>
                             <th>牛客</th><td><span style="color: #C177E7;">1135</span></td>
