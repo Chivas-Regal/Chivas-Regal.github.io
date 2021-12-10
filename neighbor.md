@@ -23,4 +23,8 @@ key: page-about
   <td style="text-align:center;"><button style="background-color: transparent;border: 2px #1791FF solid;"><a href="https://blog.probius.xyz/" style="color: #1791FF; font-weight: 700;text-decoration: none;">&nbsp;&nbsp;探姬&nbsp;&nbsp;</a></button></td>
   <td style="text-align:center;"><button style="background-color: transparent;border: 2px #1791FF solid;"><a href="https://www.cnblogs.com/muscletear" style="color: #1791FF; font-weight: 700;text-decoration: none;">&nbsp;&nbsp;qingyanng&nbsp;&nbsp;</a></button></td>
 </tr>
+<tr><td width="32%"><img src="https://cdn.jsdelivr.net/gh/EmptyDreams/resources/qqavatar.jpg" style="border-radius: 50%; width: 36%; margin-left: 32%;"></td></tr>
+<tr>
+<td style="text-align:center;"><button style="background-color: transparent;border: 2px #1791FF solid;"><a href="https://blog.emptydreams.xyz" style="color: #1791FF; font-weight: 700;text-decoration: none;">&nbsp;&nbsp;空梦&nbsp;&nbsp;</a></button></td>
+</tr>
 </table>
