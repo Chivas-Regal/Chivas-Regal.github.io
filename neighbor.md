@@ -14,21 +14,6 @@ titles:
 key: page-about
 ---
 
----
-titles:
-  # @start locale config
-  en      : &EN       Neighbor
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  友链
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  # @end locale config
-key: page-about
----
 
 <table border="0">
 <tr>
